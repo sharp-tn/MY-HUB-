@@ -1,0 +1,418 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY HUB | Personal Workspace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-icon">M</div>
+            <span>MY<span class="purple">HUB.</span></span>
+        </div>
+
+        <div class="menu-label">WORKSPACE</div>
+
+        <nav class="side-nav">
+            <a href="#home" class="active">
+                <span>◈</span> Overview
+            </a>
+            <a href="#projects">
+                <span>▦</span> My Projects
+            </a>
+            <a href="#goals">
+                <span>◎</span> Goals
+            </a>
+            <a href="#activity">
+                <span>◷</span> Activity
+            </a>
+        </nav>
+
+        <div class="menu-label second-label">PERSONAL</div>
+
+        <nav class="side-nav">
+            <a href="#learning">
+                <span>⌘</span> Learning
+            </a>
+            <a href="#ideas">
+                <span>✧</span> Ideas
+            </a>
+            <a href="#about">
+                <span>◉</span> About me
+            </a>
+            <a href="profile.html">
+    <span>◉</span> My Profile
+</a>
+
+<a href="connections.html">
+    <span>⌘</span> Connections
+</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="profile">
+                <div class="avatar">M</div>
+                <div>
+                    <strong>My Workspace</strong>
+                    <small>Personal account</small>
+                </div>
+                <span class="dots">•••</span>
+            </div>
+        </div>
+<button class="logout-btn" onclick="logout()">
+    ↪ Logout
+</button>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+     class="main-content" id="home">
+
+       <main <!-- TOPBAR -->
+        <header class="topbar">
+
+            <div class="breadcrumb">
+                Workspace <span>/</span> Overview
+            </div>
+
+            <div class="top-actions">
+                <div class="date">✦  NOVEMBER 2026</div>
+                <button class="icon-btn" aria-label="Notifications">♧</button>
+                <div class="top-avatar">M</div>
+            </div>
+
+        </header>
+
+
+        <!-- DASHBOARD -->
+        <div class="dashboard">
+
+            <!-- WELCOME -->
+            <section class="welcome">
+
+                <div class="welcome-content">
+                    <div class="welcome-tag">
+                        <span class="online-dot"></span>
+                        YOUR PERSONAL SPACE
+                    </div>
+<p id="welcomeUser" class="welcome-user"></p>
+                    <h1>Build something<br>
+                        <span>extraordinary.</span>
+                    </h1>
+
+                    <p>
+                        Your ideas, projects and ambitions.
+                        Everything starts somewhere.
+                    </p>
+
+                    <a href="#projects" class="primary-btn">
+                        Explore projects <span>↗</span>
+                    </a>
+                </div>
+
+                <div class="welcome-art">
+                    <div class="orbit orbit-one"></div>
+                    <div class="orbit orbit-two"></div>
+                    <div class="glow"></div>
+                    <div class="core">M</div>
+                    <div class="floating f-one">✦</div>
+                    <div class="floating f-two">✧</div>
+                    <div class="floating f-three">◈</div>
+                </div>
+
+                <div class="welcome-number">01 / 04</div>
+
+            </section>
+
+
+            <!-- SECTION TITLE -->
+            <div class="section-heading">
+                <div>
+                    <span class="eyebrow">YOUR PROGRESS</span>
+                    <h2>Workspace overview</h2>
+                </div>
+                <span class="live-status">
+                    <span class="online-dot"></span> ALL SYSTEMS READY
+                </span>
+            </div>
+
+
+            <!-- STATISTICS -->
+            <section class="stats-grid">
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Active projects</span>
+                        <span class="stat-icon">▦</span>
+                    </div>
+                    <h3>03</h3>
+                    <small>Things you're building</small>
+                    <div class="stat-line"><span></span></div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Goals achieved</span>
+                        <span class="stat-icon">◎</span>
+                    </div>
+                    <h3>08</h3>
+                    <small>Keep moving forward</small>
+                    <div class="stat-line"><span></span></div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Learning hours</span>
+                        <span class="stat-icon">⌘</span>
+                    </div>
+                    <h3>24<span class="unit">h</span></h3>
+                    <small>Invested in yourself</small>
+                    <div class="stat-line"><span></span></div>
+                </div>
+
+                <div class="stat-card">
+                    <div class="stat-top">
+                        <span>Ideas saved</span>
+                        <span class="stat-icon">✧</span>
+                    </div>
+                    <h3>16</h3>
+                    <small>Ideas worth exploring</small>
+                    <div class="stat-line"><span></span></div>
+                </div>
+
+            </section>
+
+
+            <!-- PROJECTS -->
+            <div class="section-heading project-heading" id="projects">
+                <div>
+                    <span class="eyebrow">WHAT YOU'RE WORKING ON</span>
+                    <h2>Featured projects</h2>
+                </div>
+                <a href="#ideas" class="text-link">View all projects ↗</a>
+            </div>
+
+
+            <section class="projects-grid">
+
+                <article class="project-card sharp-card">
+                    <div class="project-visual">
+                        <div class="visual-circle"></div>
+                        <span class="visual-title">SHARP.</span>
+                        <span class="visual-subtitle">MOVE BEYOND LIMITS</span>
+                        <span class="project-number">01</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-category">E-COMMERCE</span>
+                            <span class="project-status">IN DEVELOPMENT</span>
+                        </div>
+                        <h3>SHARP. STORE</h3>
+                        <p>Building an online fitness and lifestyle brand.</p>
+                        <div class="progress-label">
+                            <span>Development</span>
+                            <span>35%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span style="width:35%"></span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="project-card code-card">
+                    <div class="project-visual">
+                        <div class="code-symbol">&lt;/&gt;</div>
+                        <span class="code-text">CREATE. CODE. REPEAT.</span>
+                        <span class="project-number">02</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-category">DEVELOPMENT</span>
+                            <span class="project-status">LEARNING</span>
+                        </div>
+                        <h3>WEB DEVELOPMENT</h3>
+                        <p>Learning HTML, CSS and building new things.</p>
+                        <div class="progress-label">
+                            <span>Development</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span style="width:20%"></span>
+                        </div>
+                    </div>
+                </article>
+
+
+                <article class="project-card future-card">
+                    <div class="project-visual">
+                        <div class="future-symbol">✧</div>
+                        <span class="future-text">THE NEXT CHAPTER</span>
+                        <span class="project-number">03</span>
+                    </div>
+
+                    <div class="project-info">
+                        <div class="project-meta">
+                            <span class="project-category">PERSONAL</span>
+                            <span class="project-status">PLANNING</span>
+                        </div>
+                        <h3>FUTURE PROJECT</h3>
+                        <p>A place for the next big idea.</p>
+                        <div class="progress-label">
+                            <span>Development</span>
+                            <span>10%</span>
+                        </div>
+                        <div class="progress-bar">
+                            <span style="width:10%"></span>
+                        </div>
+                    </div>
+                </article>
+
+            </section>
+<div class="project-form">
+    <input
+        type="text"
+        id="newProjectInput"
+        placeholder="Enter a new project..."
+    >
+
+    <button type="button" id="addProjectBtn">
+        + Add Project
+    </button>
+</div>
+
+            <!-- BOTTOM GRID -->
+            <div class="bottom-grid">
+
+                <section class="info-panel" id="goals">
+
+    <div class="panel-heading">
+        <div>
+            <span class="eyebrow">STAY FOCUSED</span>
+            <h2>Current goals</h2>
+        </div>
+        <span class="panel-icon">◎</span>
+    </div>
+
+    <div id="goalList">
+
+        <div class="goal-item">
+            <span class="goal-check">✓</span>
+            <div>
+                <strong>Master HTML & CSS</strong>
+                <small>Web development</small>
+            </div>
+        </div>
+
+        <div class="goal-item">
+            <span class="goal-check">✓</span>
+            <div>
+                <strong>Develop SHARP.</strong>
+                <small>Business</small>
+            </div>
+        </div>
+
+        <div class="goal-item">
+            <span class="goal-pending"></span>
+            <div>
+                <strong>Learn JavaScript</strong>
+                <small>Programming</small>
+            </div>
+        </div>
+
+        <div class="goal-item">
+            <span class="goal-pending"></span>
+            <div>
+                <strong>Build a portfolio</strong>
+                <small>Personal development</small>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="goal-form">
+        <input type="text" id="newGoalInput" placeholder="Enter a new goal...">
+        <button type="button" id="addGoalBtn">+ Add Goal</button>
+    </div>
+
+</section>
+
+
+                <section class="info-panel" id="activity">
+                    <div class="panel-heading">
+                        <div>
+                            <span class="eyebrow">RECENT UPDATES</span>
+                            <h2>Latest activity</h2>
+                        </div>
+                        <span class="panel-icon">◷</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon purple-icon">⌘</div>
+                        <div>
+                            <strong>Started web development</strong>
+                            <small>HTML & CSS learning</small>
+                        </div>
+                        <span class="activity-time">TODAY</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon pink-icon">✦</div>
+                        <div>
+                            <strong>SHARP. is in progress</strong>
+                            <small>Business development</small>
+                        </div>
+                        <span class="activity-time">RECENT</span>
+                    </div>
+
+                    <div class="activity-item">
+                        <div class="activity-icon blue-icon">◈</div>
+                        <div>
+                            <strong>New ideas incoming</strong>
+                            <small>Personal workspace</small>
+                        </div>
+                        <span class="activity-time">RECENT</span>
+                    </div>
+                    <div id="activityList"></div>
+                </section>
+
+            </div>
+
+
+            <!-- ABOUT -->
+            <section class="quote-panel" id="about">
+                <span class="quote-mark">“</span>
+                <div>
+                    <h2>Dream it. Build it. Make it real.</h2>
+                    <p>Small steps. Big ambitions. Your journey starts here.</p>
+                </div>
+                <span class="quote-decoration">MY HUB / 2026</span>
+            </section>
+
+
+            <footer>
+                <span>MY HUB © 2026</span>
+                <span>BUILT WITH CURIOSITY <b>✦</b></span>
+            </footer>
+
+        </div>
+    </main>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
